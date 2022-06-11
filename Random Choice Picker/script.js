@@ -43,7 +43,6 @@ const highlight = (index) =>{
 
 
 const highlightLast = (index) =>{
-    console.log(' c bon rani khayartlk ' + spans[index].innerText)
     spans[index].classList.add('taag')
     console.log(spans[index])
 
