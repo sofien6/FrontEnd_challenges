@@ -1,0 +1,47 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(65, 172, 172);
+    flex-direction:column;
+    overflow: hidden;
+}
+.container{
+    padding: 50px;
+    height: 50%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+h3{
+    font-size: 30px;
+
+}
+
+textarea{
+    width: 80%;
+    height: 200px;
+    border: none;
+    outline: none;
+    padding: 20px;
+    color: black;
+}
+#tags {
+}
+#tags span{
+    background-color: orange;
+    margin: 20px;
+    padding: 5px 20px;
+    border-radius: 20px;
+    position: relative;
+    top: 20px;
+    display: inline-block;
+}
+
+
+#tags span.tag , span.taag{
+    background-color: rgb(50, 96, 182);
+    color: white;
+}
