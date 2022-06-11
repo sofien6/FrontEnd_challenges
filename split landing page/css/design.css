@@ -1,0 +1,75 @@
+        @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        
+        body {
+            font-family: 'Lato', sans-serif;
+            overflow-x: hidden;
+            margin: 0;
+            display: flex;
+            align-items: center;
+        }
+        
+        .xbox {
+            width: 50%;
+            height: 100vh;
+            background-image: url('https://images.alphacoders.com/111/thumb-1920-1113834.png');
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: 1;
+            transition: flex 1s ease-in-out;
+            background-repeat: no-repeat;
+            background-size: cover;
+            flex-direction: column;
+        }
+        
+        .xbox:hover {
+            flex: 2;
+        }
+        
+        .paystation {
+            width: 50%;
+            height: 100vh;
+            background-image: url('https://cdna.artstation.com/p/assets/images/images/030/093/712/large/giuseppe-spinelli-vertical-with-px.jpg?1599587676');
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: 1;
+            transition: flex 1s ease-in-out;
+            background-repeat: no-repeat;
+            background-size: cover;
+            flex-direction: column;
+        }
+        
+        .paystation:hover {
+            flex: 2;
+        }
+        
+        h1 {
+            color: white;
+            padding: 20px 50px;
+            font-size: 40px;
+            white-space: nowrap;
+        }
+        
+        h2 {
+            color: white;
+            border: 3px solid white;
+            padding: 20px 50px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        
+        .xbox h2:hover {
+            background-color: white;
+            color: rgb(41, 36, 36);
+        }
+        
+        .paystation h2:hover {
+            background-color: white;
+            color: rgb(41, 36, 36);
+        }

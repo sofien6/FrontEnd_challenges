@@ -1,0 +1,108 @@
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+    
+    body {
+        font-family: 'moli', sans-serif;
+        overflow-x: hidden;
+        margin: 0;
+        background-color: #007cc0;
+        display: flex;
+        align-items: center;
+        height: 100vh;
+        justify-content: center;
+        color: white;
+    }
+    
+    .container {
+        text-align: center;
+        padding: 40px;
+        border-radius: 15px;
+        height: 400px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 400px;
+        justify-content: center;
+        align-items: center;
+        background-color: #12375a;
+    }
+    
+    .forms {
+        display: block;
+        position: relative;
+    }
+    
+    .forms input {
+        width: 300px;
+        height: 30px;
+        background-color: transparent;
+        outline: none;
+        border: none;
+        border-bottom: 2px white solid;
+        color: white;
+        position: relative;
+        font-size: 15px;
+    }
+    
+    .forms label {
+        position: absolute;
+    }
+    
+    .forms .btn {
+        cursor: pointer;
+        width: 100px;
+        border: 1px white solid;
+        margin-top: 40px;
+        position: relative;
+        top: 40px;
+    }
+    
+    h1 {
+        color: white;
+        margin-bottom: 40px;
+    }
+    
+    label.password {
+        top: 80px;
+        font-size: 20px;
+        left: 0px;
+    }
+    
+    label.email {
+        top: 5px;
+        font-size: 20px;
+    }
+    
+    input[type="password"] {
+        top: 50px;
+        left: 0px;
+    }
+    
+    p {
+        margin-top: 60px;
+    }
+    
+    p a {
+        text-decoration: none;
+        font-weight: bold;
+        color: #037ef3;
+    }
+    
+    span {
+        transition: 0.4s ease-in;
+        z-index: -1;
+        min-width: 5px;
+        display: inline-block;
+    }
+    
+    .email span.active_pass {
+        transform: translateY(-25px);
+        color: #e4e932;
+    }
+    
+    .password span.active {
+        transform: translateY(-25px);
+        color: #e4e932;
+    }

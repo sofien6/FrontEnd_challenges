@@ -1,0 +1,78 @@
+            @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+            * {
+                box-sizing: border-box;
+                padding: 0;
+                margin: 0;
+            }
+            
+            body {
+                font-family: 'Lato', sans-serif;
+                overflow-x: hidden;
+                margin: 0;
+            }
+            
+            h1 {
+                text-align: center;
+            }
+            
+            .container-faq {
+                max-width: 600px;
+                margin: 0 auto;
+                padding: 40px;
+            }
+            
+            .faq-items {
+                position: relative;
+                padding: 50px;
+                border-radius: 10px;
+                margin-top: 10px;
+                background-color: transparent;
+                box-shadow: -2px 3px 16px -2px rgba(0, 0, 0, 0.75);
+                overflow: hidden;
+                min-height: 50px;
+            }
+            
+            .question {
+                margin-bottom: 10px;
+                font-family: 'Lato', sans-serif;
+            }
+            
+            .answer {
+                display: none;
+                margin-top: 20px;
+                font-weight: bold;
+            }
+            
+            .toggle {
+                position: absolute;
+                top: 20px;
+                right: 50px;
+                outline: none;
+                border: none;
+            }
+            
+            .toggle .fa-times-circle {
+                font-size: 30px;
+                position: absolute;
+                display: none;
+                cursor: pointer;
+                color: grey;
+            }
+            
+            .toggle .fa-chevron-down {
+                font-size: 30px;
+                position: absolute;
+                cursor: pointer;
+            }
+            
+            .faq-items.active .toggle .fa-times-circle {
+                display: block;
+            }
+            
+            .faq-items.active .toggle .fa-chevron-down {
+                display: none;
+            }
+            
+            .faq-items.active .answer {
+                display: block;
+            }

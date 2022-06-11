@@ -1,0 +1,124 @@
+        @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        
+        body {
+            font-family: 'Lato', sans-serif;
+            overflow-x: hidden;
+            margin: 0;
+            background-color: rgb(71, 66, 66);
+        }
+        
+        .container {
+            background-color: white;
+            transform-origin: top left;
+            padding: 50px;
+            transition: transform 1s;
+        }
+        
+        .circle-container {
+            position: fixed;
+            top: -100px;
+            left: -100px;
+        }
+        
+        .circle {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: #ffb310;
+            transition: transform 1s linear;
+        }
+        
+        .circle button {
+            position: relative;
+            font-size: 35px;
+            border: none;
+            border-radius: 50%;
+            color: white;
+            cursor: pointer;
+            background-color: transparent;
+            top: 50%;
+            left: 50%;
+        }
+        
+        .circle #close {
+            top: 60%;
+            left: 20%;
+        }
+        
+        .circle button#open {
+            position: relative;
+            left: 50%;
+            top: 60%;
+        }
+        
+        .content {
+            margin: 50px auto;
+        }
+        
+        img {
+            max-width: 100%;
+        }
+        
+        .content p {
+            line-height: 1.5;
+            margin-top: 10px;
+        }
+        
+        .content small {
+            color: gray;
+        }
+        
+        .content h1 {
+            margin-bottom: 10px;
+        }
+        
+        .container.shownave {
+            transform: rotate(-20deg);
+        }
+        
+        .container.shownave .circle {
+            transform: rotate(-75deg);
+        }
+        
+        nav {
+            position: fixed;
+            bottom: 50px;
+        }
+        
+        ul {
+            list-style-type: none;
+        }
+        
+        ul li {
+            margin: 30px 10px;
+            font-weight: bold;
+            font-size: 20px;
+            color: white;
+            transform: translateX(-100%);
+            cursor: pointer;
+            transition: transform 1s ease-in;
+        }
+        /* hna rah yakdad Li zawja*/
+        
+        ul li+li {
+            margin-left: 20px;
+            transform: translateX(-150%);
+            transition: transform 1.5s ease-in;
+        }
+        /* hna rah yaksad li talta*/
+        
+        ul li+li+li {
+            margin-left: 45px;
+            transform: translateX(-250%);
+            transition: transform 2s ease-in;
+        }
+        /*ki ykoun container andeh shownave li ywalou lel blayashom kima kanou */
+        
+        .container.shownave+nav ul li {
+            transform: translateX(0);
+        }
